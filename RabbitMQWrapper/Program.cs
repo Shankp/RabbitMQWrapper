@@ -5,7 +5,7 @@ using System.Configuration;
 using System.Text;
 using System.Threading;
 
-namespace TestRabbitMQApp
+namespace RabbitMQWrapper
 {
     class Program
     {
@@ -17,7 +17,7 @@ namespace TestRabbitMQApp
         static void Main(string[] args)
         {           
 
-            var consumerTag = SubscriberService.Subscriber(queueName);
+            //var consumerTag = SubscriberService.Subscriber(queueName);
 
             while (true)
             {                

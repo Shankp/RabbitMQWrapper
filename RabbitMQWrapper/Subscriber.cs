@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using System;
 using System.Text;
 
-namespace TestRabbitMQApp
+namespace RabbitMQWrapper
 {
     public class SubscriberService
     {
@@ -56,6 +56,8 @@ namespace TestRabbitMQApp
             m_model = m_connection.CreateModel();
             return m_connection;
         }
+
+      
         public static void TestCallBacmMethod(string receivedMessage)
         {
             Console.WriteLine("Received message - " + receivedMessage);

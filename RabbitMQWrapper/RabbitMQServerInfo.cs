@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestRabbitMQApp
+namespace RabbitMQWrapper
 {
     public class RabbitMQServerInfo
     {
@@ -16,5 +16,6 @@ namespace TestRabbitMQApp
         public string RabbitMqPwdMQTT { get; set; }
         public string RabbitMqVirtualHostMQTT { get; set; }
         public int RabbitMqPortMQTT { get; set; }
+        public int RabbitMQReconnectingAttempts { get; set; }
     }
 }
